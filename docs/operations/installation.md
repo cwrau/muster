@@ -46,7 +46,31 @@ brew upgrade muster
 muster version
 ```
 
-### Method 2: Binary Installation
+### Method 2: AUR (Arch Linux)
+
+On Arch Linux and Arch-based distributions, you can install Muster from the AUR using your preferred AUR helper:
+
+```bash
+# Using yay
+yay -S muster-bin
+
+# Using paru
+paru -S muster-bin
+```
+
+The `muster-bin` package is available at: https://aur.archlinux.org/packages/muster-bin
+
+#### Upgrade
+```bash
+yay -Syu muster-bin
+```
+
+#### Verify Installation
+```bash
+muster version
+```
+
+### Method 3: Binary Installation
 
 #### Download Latest Release
 ```bash
@@ -71,7 +95,7 @@ sudo mv muster /usr/local/bin/
 muster version
 ```
 
-### Method 3: Build from Source
+### Method 4: Build from Source
 
 ```bash
 # Clone repository
@@ -85,7 +109,7 @@ go build -o muster .
 sudo mv muster /usr/local/bin/
 ```
 
-### Method 4: Container Deployment
+### Method 5: Container Deployment
 
 ```bash
 # Run with Docker
