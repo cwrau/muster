@@ -182,6 +182,14 @@ brew tap giantswarm/muster
 brew install muster
 ```
 
+#### AUR (Arch Linux)
+
+```bash
+yay -S muster-bin
+```
+
+The `muster-bin` package is available at: https://aur.archlinux.org/packages/muster-bin
+
 #### Manual Installation
 
 ```bash
